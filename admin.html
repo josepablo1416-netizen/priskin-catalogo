@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PriSkin · Admin</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="page">
+  <section id="login" class="login">
+    <h1>PriSkin Admin</h1>
+    <p>Panel privado para editar el catálogo.</p>
+    <input id="password" type="password" placeholder="Contraseña">
+    <button id="loginBtn">Entrar</button>
+    <small>Contraseña inicial: <strong>priskin2026</strong></small>
+  </section>
+
+  <section id="dashboard" class="hidden">
+    <header class="hero small-hero">
+      <div>
+        <div class="eyebrow">Panel de administración</div>
+        <h1>PriSkin</h1>
+        <p>Agregar, editar, ocultar o eliminar productos.</p>
+      </div>
+      <div class="actions">
+        <a class="button light" href="index.html">Ver catálogo</a>
+        <button id="exportBtn">Descargar datos</button>
+        <button id="logoutBtn" class="light">Salir</button>
+      </div>
+    </header>
+
+    <section class="admin-box">
+      <h2>Producto</h2>
+      <input type="hidden" id="productId">
+      <div class="form">
+        <input id="name" placeholder="Nombre">
+        <input id="category" placeholder="Marca / categoría">
+        <input id="price" placeholder="Precio XMAYOR">
+        <label class="file-label">Imagen <input id="image" type="file" accept="image/*"></label>
+        <textarea id="description" placeholder="Descripción"></textarea>
+      </div>
+      <button id="saveBtn">Guardar producto</button>
+      <button id="clearBtn" class="light">Limpiar</button>
+      <p class="note">Los cambios se guardan en este navegador. Para publicarlos para todos, descarga datos y se actualiza el repo.</p>
+    </section>
+
+    <section id="adminList" class="catalog"></section>
+  </section>
+</main>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Mixsoon Bean Sun Stick",
+    "category": "Mixsoon",
+    "description": "Protección solar SPF. Textura ligera. Acabado no pegajoso. Formato en barra portátil.",
+    "price": "₡ 8 200",
+    "image": "images/01-mixsoon-bean-sun-stick.jpg",
+    "available": true,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Mixsoon Centella Sun Cream",
+    "category": "Mixsoon",
+    "description": "Extracto de centella asiática. Fórmula hidratante. Efecto calmante. Uso diario con SPF.",
+    "price": "₡ 6 600",
+    "image": "images/02-mixsoon-centella-sun-cream.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Mixsoon Collagen Cleansing Balm",
+    "category": "Mixsoon",
+    "description": "Remueve maquillaje. Enriquecido con colágeno. Limpieza profunda. Deja la piel hidratada.",
+    "price": "₡ 8 350",
+    "image": "images/03-mixsoon-collagen-cleansing-balm.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Mixsoon Natural Bean Lip Mask Balm",
+    "category": "Mixsoon",
+    "description": "Nutre los labios. Mascarilla nocturna. Extracto de frijol. Textura suave y reparadora.",
+    "price": "₡ 5 800",
+    "image": "images/04-mixsoon-natural-bean-lip-mask-balm.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Mixsoon Centella Cleansing Water",
+    "category": "Mixsoon",
+    "description": "Fórmula micelar. Limpieza suave. Efecto calmante. No requiere enjuague.",
+    "price": "₡ 5 500",
+    "image": "images/05-mixsoon-centella-cleansing-water.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Mixsoon PDRN Collagen Gel Cleanser",
+    "category": "Mixsoon",
+    "description": "Fórmula con PDRN. Textura en gel. Limpieza hidratante. Refuerza la barrera cutánea.",
+    "price": "₡ 4 300",
+    "image": "images/06-mixsoon-pdrn-collagen-gel-cleanser.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Medicube PDRN Pink Collagen Toner Pads",
+    "category": "Medicube",
+    "description": "Pads pre-humedecidos. Efecto iluminador. Estimula colágeno. Uso práctico diario.",
+    "price": "₡ 10 600",
+    "image": "images/07-medicube-pdrn-pink-collagen-toner-pads.jpg",
+    "available": true,
+    "featured": true
+  },
+  {
+    "id": 8,
+    "name": "Medicube PDRN Pink One Day Serum",
+    "category": "Medicube",
+    "description": "Ampollas de dosis única. PDRN 99%. Aporta luminosidad. Reparación intensiva.",
+    "price": "₡ 5 000",
+    "image": "images/08-medicube-pdrn-pink-one-day-serum.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Mixsoon PDRN Collagen Cream",
+    "category": "Mixsoon",
+    "description": "Crema con PDRN y colágeno. Mejora elasticidad. Hidratación profunda. Refuerza la piel.",
+    "price": "₡ 7 600",
+    "image": "images/09-mixsoon-pdrn-collagen-cream.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Anua PDRN Hyaluronic Acid Capsule 100 Serum",
+    "category": "Anua",
+    "description": "Suero con PDRN y ácido hialurónico. Hidrata intensamente. Efecto relleno. Absorción ligera.",
+    "price": "₡ 10 400",
+    "image": "images/10-anua-pdrn-hyaluronic-acid-capsule-100-serum.jpg",
+    "available": true,
+    "featured": true
+  },
+  {
+    "id": 11,
+    "name": "Medicube PDRN Pink Collagen Capsule Cream",
+    "category": "Medicube",
+    "description": "Crema cápsula de colágeno rosa. Efecto reafirmante. Mejora firmeza. Textura rica no grasa.",
+    "price": "₡ 9 700",
+    "image": "images/11-medicube-pdrn-pink-collagen-capsule-cream.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Celimax Retinol Shot Tightening Serum",
+    "category": "Celimax",
+    "description": "Fórmula con retinol. Efecto reafirmante. Acción anti-edad. Mejora textura de la piel.",
+    "price": "₡ 8 800",
+    "image": "images/12-celimax-retinol-shot-tightening-serum.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "BOJ Revive Eye Serum Ginseng + Retinal",
+    "category": "BOJ",
+    "description": "Extracto de ginseng. Contiene retinal. Cuidado del contorno de ojos. Reduce líneas finas.",
+    "price": "₡ 7 600",
+    "image": "images/13-boj-revive-eye-serum-ginseng-retinal.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Mixsoon Vitamin C Cream",
+    "category": "Mixsoon",
+    "description": "Con vitamina C. Ilumina la piel. Unifica el tono. Ideal para uso diario.",
+    "price": "₡ 6 300",
+    "image": "images/14-mixsoon-vitamin-c-cream.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "VT Reedle Shot 100",
+    "category": "VT",
+    "description": "Tecnología micro-aguja. Mejora textura. Aporta luminosidad. Fórmula avanzada.",
+    "price": "₡ 11 700",
+    "image": "images/15-vt-reedle-shot-100.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "Medicube Kojic Acid Turmeric Night Mask",
+    "category": "Medicube",
+    "description": "Mascarilla nocturna. Con ácido kójico. Extracto de cúrcuma. Efecto iluminador.",
+    "price": "₡ 10 700",
+    "image": "images/16-medicube-kojic-acid-turmeric-night-mask.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Acne Pimple Master Patch",
+    "category": "COSRX",
+    "description": "Elimina granitos absorbiendo impurezas. Protege la piel y acelera la cicatrización.",
+    "price": "₡ 2 750",
+    "image": "images/17-acne-pimple-master-patch.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 18,
+    "name": "Apricot Blossom Peeling Gel",
+    "category": "Beauty of Joseon",
+    "description": "Exfoliación suave que elimina células muertas sin irritar. Deja la piel más lisa y luminosa.",
+    "price": "₡ 6 200",
+    "image": "images/18-apricot-blossom-peeling-gel.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 19,
+    "name": "Mixsoon Pure Glow Essential Set",
+    "category": "Mixsoon",
+    "description": "Rutina completa para piel hidratada, luminosa y saludable. Ideal para glass skin coreano.",
+    "price": "₡ 9 850",
+    "image": "images/19-mixsoon-pure-glow-essential-set.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 20,
+    "name": "Mixsoon Bean Balancing Ampoule Mist",
+    "category": "Mixsoon",
+    "description": "Hidratación instantánea con glow natural. Equilibra la piel y mejora textura.",
+    "price": "₡ 9 850",
+    "image": "images/20-mixsoon-bean-balancing-ampoule-mist.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 21,
+    "name": "TOCOBO Multi Ceramide Cream",
+    "category": "TOCOBO",
+    "description": "Refuerza la barrera de la piel con ceramidas. Hidratación profunda sin sensación pesada.",
+    "price": "₡ 7 200",
+    "image": "images/21-tocobo-multi-ceramide-cream.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 22,
+    "name": "Mixsoon Centella Cleansing Foam",
+    "category": "Mixsoon",
+    "description": "Limpieza suave que no reseca. Centella Asiática para calmar. Ideal piel sensible.",
+    "price": "₡ 8 500",
+    "image": "images/22-mixsoon-centella-cleansing-foam.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 23,
+    "name": "COSRX All About Snail Kit",
+    "category": "COSRX",
+    "description": "Rutina completa para reparar y regenerar la piel. Mucina de caracol para hidratación máxima.",
+    "price": "₡ 13 000",
+    "image": "images/23-cosrx-all-about-snail-kit.jpg",
+    "available": true,
+    "featured": true
+  },
+  {
+    "id": 24,
+    "name": "Mixsoon Cica-Hyal Sun Stick",
+    "category": "Mixsoon",
+    "description": "Protección SPF 50+ PA++++. Centella + Ácido Hialurónico. Ideal para retoques.",
+    "price": "₡ 8 400",
+    "image": "images/24-mixsoon-cica-hyal-sun-stick.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 25,
+    "name": "Mixsoon Bean Hydrogel Eye Patch",
+    "category": "Mixsoon",
+    "description": "Reduce ojeras e hinchazón al instante. Hidratación profunda para el contorno de ojos.",
+    "price": "₡ 9 350",
+    "image": "images/25-mixsoon-bean-hydrogel-eye-patch.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": 26,
+    "name": "Mixsoon 9 Steps Trial KIT",
+    "category": "Mixsoon",
+    "description": "9 pasos esenciales en un solo kit. Ingredientes gentiles. Especial para piel sensible.",
+    "price": "₡ 2 500",
+    "image": "images/26-mixsoon-9-steps-trial-kit.jpg",
+    "available": true,
+    "featured": false
+  }
+]
