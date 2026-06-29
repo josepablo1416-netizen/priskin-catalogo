@@ -10,7 +10,7 @@
   <a class="logo" href="#"><b>PriSkin</b><span>Skincare Shop</span></a>
   <button class="mobile-menu" id="menuBtn">☰</button>
   <nav id="navMenu"><a href="#catalogo">Catálogo</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a></nav>
-  <a class="cta" target="_blank" href="https://wa.me/50662315954">WhatsApp</a>
+  <button class="cart-btn" id="cartOpen">🛒 <span id="cartCount">0</span></button>
 </header>
 
 <main>
@@ -19,10 +19,8 @@
       <span class="tag">K-Beauty · Costa Rica</span>
       <h1>Catálogo Mayorista</h1>
       <p>Productos coreanos originales para revendedores. Solo precios <b>XMAYOR</b>.</p>
-      <div class="buttons"><a href="#catalogo" class="btn">Ver catálogo</a><a target="_blank" href="https://wa.me/50662315954" class="btn ghost">Solicitar pedido</a></div>
-      <div class="benefits">
-        <div>✨ Productos originales</div><div>💗 Venta al por mayor</div><div>📦 Entrega coordinada</div>
-      </div>
+      <div class="buttons"><a href="#catalogo" class="btn">Ver catálogo</a><button class="btn ghost" id="cartOpenHero">Ver carrito</button></div>
+      <div class="benefits"><div>✨ Productos originales</div><div>💗 Venta al por mayor</div><div>📦 Entrega coordinada</div></div>
     </div>
     <div class="hero-product"><img id="heroImg" src="images/01-mixsoon-bean-sun-stick.jpg" alt="Producto destacado"></div>
   </section>
@@ -47,6 +45,16 @@
 
   <section id="productGrid" class="grid"></section>
 </main>
+
+<aside class="cart-panel" id="cartPanel">
+  <div class="cart-head"><h2>Carrito</h2><button id="cartClose">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">₡ 0</strong></div>
+    <button id="checkoutBtn" class="checkout">Enviar pedido por WhatsApp</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
 
 <footer id="contacto">
   <div><b>PriSkin</b><span>Skincare Shop · Costa Rica</span></div>

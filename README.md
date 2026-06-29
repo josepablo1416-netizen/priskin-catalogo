@@ -1,3 +1,3 @@
-# PriSkin V4
+# PriSkin V5
 
-Fix de menú, sección de marcas/contacto e imágenes centradas.
+Imágenes mejor ajustadas y carrito con checkout por WhatsApp.
