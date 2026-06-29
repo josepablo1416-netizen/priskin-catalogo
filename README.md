@@ -1,5 +1,3 @@
-# PriSkin V2 Premium
+# PriSkin V4
 
-- Catálogo público: `index.html`
-- Admin: `admin.html`
-- Contraseña: `priskin2026`
+Fix de menú, sección de marcas/contacto e imágenes centradas.
