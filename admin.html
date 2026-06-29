@@ -2,37 +2,29 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PriSkin · Admin</title>
+<title>PriSkin Admin</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="admin-body">
-<section id="login" class="login-card">
+<body class="admin-page">
+<section id="login" class="login">
   <h1>PriSkin Admin</h1>
-  <p>Panel privado para editar productos.</p>
+  <p>Panel privado.</p>
   <input id="password" type="password" placeholder="Contraseña">
   <button id="loginBtn">Entrar</button>
-  <small>Contraseña inicial: <strong>priskin2026</strong></small>
+  <small>Contraseña: <b>priskin2026</b></small>
 </section>
 
-<main id="dashboard" class="admin hidden">
+<main id="dashboard" class="dashboard hidden">
   <aside>
-    <a class="logo" href="index.html"><span>PriSkin</span><small>Admin</small></a>
+    <a class="logo" href="index.html"><b>PriSkin</b><span>Admin</span></a>
     <button id="newBtn">+ Nuevo producto</button>
-    <button id="exportBtn" class="light">Descargar datos</button>
+    <button id="exportBtn" class="light">Descargar products.json</button>
     <button id="logoutBtn" class="light">Salir</button>
-    <p>Los cambios se guardan localmente. Para publicarlos globalmente, descarga products.json y actualiza el repo.</p>
+    <p>Los cambios se guardan en tu navegador. Para hacerlos públicos, descarga products.json y reemplázalo en GitHub.</p>
   </aside>
-
   <section class="admin-main">
-    <div class="admin-header">
-      <div>
-        <p class="eyebrow">Dashboard</p>
-        <h1>Productos</h1>
-      </div>
-      <a class="whatsapp" href="index.html">Ver catálogo</a>
-    </div>
-
-    <section class="editor">
+    <h1>Productos</h1>
+    <div class="editor">
       <input type="hidden" id="productId">
       <input id="name" placeholder="Nombre">
       <input id="brand" placeholder="Marca">
@@ -40,14 +32,12 @@
       <input id="price" placeholder="Precio XMAYOR">
       <label>Imagen <input id="image" type="file" accept="image/*"></label>
       <textarea id="description" placeholder="Descripción"></textarea>
-      <button id="saveBtn">Guardar producto</button>
+      <button id="saveBtn">Guardar</button>
       <button id="cancelBtn" class="light">Limpiar</button>
-    </section>
-
-    <section id="adminList" class="admin-list"></section>
+    </div>
+    <div id="adminList" class="admin-list"></div>
   </section>
 </main>
-
 <script src="js/admin.js"></script>
 </body>
 </html>
