@@ -1,3 +1,3 @@
-# PriSkin V5
+# PriSkin V7 Premium
 
-Imágenes mejor ajustadas y carrito con checkout por WhatsApp.
+Mobile-first: barra inferior, chips de marcas, carrito móvil tipo bottom sheet, tarjetas grandes y experiencia tablet/celular optimizada.

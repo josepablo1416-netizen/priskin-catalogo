@@ -8,7 +8,8 @@
     "price": "₡ 8 200",
     "image": "images/01-mixsoon-bean-sun-stick.jpg",
     "available": true,
-    "featured": true
+    "featured": true,
+    "badge": "BEST SELLER"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "price": "₡ 6 600",
     "image": "images/02-mixsoon-centella-sun-cream.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "price": "₡ 8 350",
     "image": "images/03-mixsoon-collagen-cleansing-balm.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "price": "₡ 5 800",
     "image": "images/04-mixsoon-natural-bean-lip-mask-balm.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "price": "₡ 5 500",
     "image": "images/05-mixsoon-centella-cleansing-water.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "price": "₡ 4 300",
     "image": "images/06-mixsoon-pdrn-collagen-gel-cleanser.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "price": "₡ 10 600",
     "image": "images/07-medicube-pdrn-pink-collagen-toner-pads.jpg",
     "available": true,
-    "featured": true
+    "featured": true,
+    "badge": "BEST SELLER"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "price": "₡ 5 000",
     "image": "images/08-medicube-pdrn-pink-one-day-serum.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "price": "₡ 7 600",
     "image": "images/09-mixsoon-pdrn-collagen-cream.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "price": "₡ 10 400",
     "image": "images/10-anua-pdrn-hyaluronic-acid-capsule-100-serum.jpg",
     "available": true,
-    "featured": true
+    "featured": true,
+    "badge": "NEW"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "price": "₡ 9 700",
     "image": "images/11-medicube-pdrn-pink-collagen-capsule-cream.jpg",
     "available": true,
-    "featured": true
+    "featured": true,
+    "badge": "BEST SELLER"
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "price": "₡ 8 800",
     "image": "images/12-celimax-retinol-shot-tightening-serum.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "price": "₡ 7 600",
     "image": "images/13-boj-revive-eye-serum-ginseng-retinal.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "price": "₡ 6 300",
     "image": "images/14-mixsoon-vitamin-c-cream.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "price": "₡ 11 700",
     "image": "images/15-vt-reedle-shot-100.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "price": "₡ 10 700",
     "image": "images/16-medicube-kojic-acid-turmeric-night-mask.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "price": "₡ 2 750",
     "image": "images/17-acne-pimple-master-patch.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "price": "₡ 6 200",
     "image": "images/18-apricot-blossom-peeling-gel.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "price": "₡ 9 850",
     "image": "images/19-mixsoon-pure-glow-essential-set.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "price": "₡ 9 850",
     "image": "images/20-mixsoon-bean-balancing-ampoule-mist.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "price": "₡ 7 200",
     "image": "images/21-tocobo-multi-ceramide-cream.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 22,
@@ -239,7 +260,8 @@
     "price": "₡ 8 500",
     "image": "images/22-mixsoon-centella-cleansing-foam.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": ""
   },
   {
     "id": 23,
@@ -250,7 +272,8 @@
     "price": "₡ 13 000",
     "image": "images/23-cosrx-all-about-snail-kit.jpg",
     "available": true,
-    "featured": true
+    "featured": true,
+    "badge": "BEST SELLER"
   },
   {
     "id": 24,
@@ -261,7 +284,8 @@
     "price": "₡ 8 400",
     "image": "images/24-mixsoon-cica-hyal-sun-stick.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": "NEW"
   },
   {
     "id": 25,
@@ -272,7 +296,8 @@
     "price": "₡ 9 350",
     "image": "images/25-mixsoon-bean-hydrogel-eye-patch.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": "NEW"
   },
   {
     "id": 26,
@@ -283,6 +308,7 @@
     "price": "₡ 2 500",
     "image": "images/26-mixsoon-9-steps-trial-kit.jpg",
     "available": true,
-    "featured": false
+    "featured": false,
+    "badge": "NEW"
   }
 ]

@@ -6,60 +6,45 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div class="top-strip"><span>🚚 Envíos a todo Costa Rica</span><span>♡ 100% originales</span><span>Tu destino de K-Beauty</span><span>WhatsApp 6231-5954</span></div>
 <header class="topbar">
-  <a class="logo" href="#"><b>PriSkin</b><span>Skincare Shop</span></a>
+  <a class="logo" href="#"><b>PriSkin</b><span>K-Beauty Store</span></a>
   <button class="mobile-menu" id="menuBtn">☰</button>
-  <nav id="navMenu"><a href="#catalogo">Catálogo</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a></nav>
+  <nav id="navMenu"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a></nav>
   <button class="cart-btn" id="cartOpen">🛒 <span id="cartCount">0</span></button>
 </header>
-
-<main>
+<main id="inicio">
   <section class="hero">
     <div class="copy">
       <span class="tag">K-Beauty · Costa Rica</span>
-      <h1>Catálogo Mayorista</h1>
-      <p>Productos coreanos originales para revendedores. Solo precios <b>XMAYOR</b>.</p>
+      <h1>Catálogo Mayorista PriSkin</h1>
+      <p>Productos coreanos originales para revendedores. Precios exclusivos <b>XMAYOR</b> y pedido directo por WhatsApp.</p>
       <div class="buttons"><a href="#catalogo" class="btn">Ver catálogo</a><button class="btn ghost" id="cartOpenHero">Ver carrito</button></div>
-      <div class="benefits"><div>✨ Productos originales</div><div>💗 Venta al por mayor</div><div>📦 Entrega coordinada</div></div>
+      <div class="benefits"><div><b>100%</b><span>Originales</span></div><div><b>XMAYOR</b><span>Precios para revendedores</span></div><div><b>CR</b><span>Entrega coordinada</span></div></div>
     </div>
     <div class="hero-product"><img id="heroImg" src="images/01-mixsoon-bean-sun-stick.jpg" alt="Producto destacado"></div>
   </section>
-
-  <section id="marcas" class="brands-section">
-    <span class="tag">Marcas</span>
-    <h2>Compra por marca</h2>
-    <div id="brandButtons" class="brand-buttons"></div>
-  </section>
-
+  <section id="marcas" class="brands-section"><span class="tag">Marcas</span><h2>Compra por marca</h2><div id="brandButtons" class="brand-buttons"></div></section>
   <section class="searchbox" id="catalogo">
-    <input id="search" placeholder="Buscar producto...">
+    <input id="search" placeholder="Buscar productos...">
+    <div id="mobileChips" class="mobile-chips"></div>
     <select id="brandSelect"><option value="">Todas las marcas</option></select>
     <select id="catSelect"><option value="">Todas las categorías</option></select>
     <button id="clearBtn">Limpiar</button>
   </section>
-
-  <section class="section-title">
-    <div><span class="tag">Catálogo</span><h2>Productos disponibles</h2><p id="countText"></p></div>
-    <a class="admin" href="admin.html">Admin</a>
-  </section>
-
+  <section class="section-title"><div><span class="tag">Catálogo</span><h2>Productos disponibles</h2><p id="countText"></p></div></section>
   <section id="productGrid" class="grid"></section>
 </main>
-
-<aside class="cart-panel" id="cartPanel">
-  <div class="cart-head"><h2>Carrito</h2><button id="cartClose">×</button></div>
-  <div id="cartItems" class="cart-items"></div>
-  <div class="cart-footer">
-    <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">₡ 0</strong></div>
-    <button id="checkoutBtn" class="checkout">Enviar pedido por WhatsApp</button>
-  </div>
-</aside>
+<aside class="cart-panel" id="cartPanel"><div class="cart-head"><h2>Tu pedido</h2><button id="cartClose">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">₡ 0</strong></div><button id="checkoutBtn" class="checkout">Enviar pedido por WhatsApp</button></div></aside>
 <div class="overlay" id="overlay"></div>
-
-<footer id="contacto">
-  <div><b>PriSkin</b><span>Skincare Shop · Costa Rica</span></div>
-  <div><b>Contacto</b><span>Instagram @priskincr · WhatsApp 6231-5954</span></div>
-</footer>
+<div class="modal" id="quickModal"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+<footer id="contacto"><div><b>PriSkin</b><span>K-Beauty Store · Costa Rica</span></div><div><b>Contacto</b><span>Instagram @priskincr · WhatsApp 6231-5954</span></div><a class="admin-link" href="admin.html">Admin</a></footer>
+<nav class="bottom-nav">
+  <a href="#inicio">Inicio</a>
+  <a href="#catalogo">Buscar</a>
+  <button id="cartOpenBottom">Carrito <span id="cartCountBottom">0</span></button>
+  <a target="_blank" href="https://wa.me/50662315954">WhatsApp</a>
+</nav>
 <script src="js/catalog.js"></script>
 </body>
 </html>
