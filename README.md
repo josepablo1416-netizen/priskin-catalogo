@@ -1,6 +1,5 @@
-# PriSkin Catálogo
+# PriSkin V2 Premium
 
-Catálogo web con panel admin.
-
-Admin: `/admin.html`
-Contraseña inicial: `priskin2026`
+- Catálogo público: `index.html`
+- Admin: `admin.html`
+- Contraseña: `priskin2026`

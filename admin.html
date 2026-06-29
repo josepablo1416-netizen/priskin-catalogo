@@ -5,48 +5,49 @@
 <title>PriSkin · Admin</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<main class="page">
-  <section id="login" class="login">
-    <h1>PriSkin Admin</h1>
-    <p>Panel privado para editar el catálogo.</p>
-    <input id="password" type="password" placeholder="Contraseña">
-    <button id="loginBtn">Entrar</button>
-    <small>Contraseña inicial: <strong>priskin2026</strong></small>
-  </section>
+<body class="admin-body">
+<section id="login" class="login-card">
+  <h1>PriSkin Admin</h1>
+  <p>Panel privado para editar productos.</p>
+  <input id="password" type="password" placeholder="Contraseña">
+  <button id="loginBtn">Entrar</button>
+  <small>Contraseña inicial: <strong>priskin2026</strong></small>
+</section>
 
-  <section id="dashboard" class="hidden">
-    <header class="hero small-hero">
+<main id="dashboard" class="admin hidden">
+  <aside>
+    <a class="logo" href="index.html"><span>PriSkin</span><small>Admin</small></a>
+    <button id="newBtn">+ Nuevo producto</button>
+    <button id="exportBtn" class="light">Descargar datos</button>
+    <button id="logoutBtn" class="light">Salir</button>
+    <p>Los cambios se guardan localmente. Para publicarlos globalmente, descarga products.json y actualiza el repo.</p>
+  </aside>
+
+  <section class="admin-main">
+    <div class="admin-header">
       <div>
-        <div class="eyebrow">Panel de administración</div>
-        <h1>PriSkin</h1>
-        <p>Agregar, editar, ocultar o eliminar productos.</p>
+        <p class="eyebrow">Dashboard</p>
+        <h1>Productos</h1>
       </div>
-      <div class="actions">
-        <a class="button light" href="index.html">Ver catálogo</a>
-        <button id="exportBtn">Descargar datos</button>
-        <button id="logoutBtn" class="light">Salir</button>
-      </div>
-    </header>
+      <a class="whatsapp" href="index.html">Ver catálogo</a>
+    </div>
 
-    <section class="admin-box">
-      <h2>Producto</h2>
+    <section class="editor">
       <input type="hidden" id="productId">
-      <div class="form">
-        <input id="name" placeholder="Nombre">
-        <input id="category" placeholder="Marca / categoría">
-        <input id="price" placeholder="Precio XMAYOR">
-        <label class="file-label">Imagen <input id="image" type="file" accept="image/*"></label>
-        <textarea id="description" placeholder="Descripción"></textarea>
-      </div>
+      <input id="name" placeholder="Nombre">
+      <input id="brand" placeholder="Marca">
+      <input id="category" placeholder="Categoría">
+      <input id="price" placeholder="Precio XMAYOR">
+      <label>Imagen <input id="image" type="file" accept="image/*"></label>
+      <textarea id="description" placeholder="Descripción"></textarea>
       <button id="saveBtn">Guardar producto</button>
-      <button id="clearBtn" class="light">Limpiar</button>
-      <p class="note">Los cambios se guardan en este navegador. Para publicarlos para todos, descarga datos y se actualiza el repo.</p>
+      <button id="cancelBtn" class="light">Limpiar</button>
     </section>
 
-    <section id="adminList" class="catalog"></section>
+    <section id="adminList" class="admin-list"></section>
   </section>
 </main>
+
 <script src="js/admin.js"></script>
 </body>
 </html>

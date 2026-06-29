@@ -1,24 +1,9 @@
 
-let products=[], active='Todos';
-const catalog=document.getElementById('catalog'), filters=document.getElementById('filters'), search=document.getElementById('search');
-
-async function load(){
-  const saved=localStorage.getItem('priskinProducts');
-  products=saved?JSON.parse(saved):await (await fetch('products.json')).json();
-  renderFilters(); render();
-}
-function renderFilters(){
-  const cats=['Todos','Destacados',...Array.from(new Set(products.map(p=>p.category))).sort()];
-  filters.innerHTML=cats.map(c=>`<button class="filter ${c===active?'active':''}" onclick="setFilter('${safeAttr(c)}')">${esc(c)}</button>`).join('');
-}
-function setFilter(c){active=c;renderFilters();render();}
-function render(){
-  const q=search.value.toLowerCase();
-  catalog.innerHTML=products.filter(p=>p.available!==false)
-    .filter(p=>((active==='Todos')||(active==='Destacados'&&p.featured)||p.category===active)&&(!q||(`${p.name} ${p.description} ${p.category}`).toLowerCase().includes(q)))
-    .map(card).join('');
-}
-function card(p){return `<article class="card"><div class="photo"><img src="${p.image}" alt="${esc(p.name)}"></div><div class="info"><div class="badge ${p.featured?'featured':''}">${p.featured?'Destacado · ':''}${esc(p.category)}</div><h2>${esc(p.name)}</h2><p>${esc(p.description)}</p></div><div class="price"><span>XMAYOR</span><strong>${esc(p.price)}</strong></div></article>`;}
+let products=[], filtered=[];
+const grid=document.getElementById('productGrid'), search=document.getElementById('search'), brandSelect=document.getElementById('brandSelect'), catSelect=document.getElementById('catSelect'), countText=document.getElementById('countText');
+async function init(){const saved=localStorage.getItem('priskinProductsV2'); products=saved?JSON.parse(saved):await (await fetch('products.json')).json(); setupFilters(); render();}
+function setupFilters(){[...new Set(products.map(p=>p.brand))].sort().forEach(b=>brandSelect.innerHTML+=`<option>${esc(b)}</option>`);[...new Set(products.map(p=>p.category))].sort().forEach(c=>catSelect.innerHTML+=`<option>${esc(c)}</option>`)}
+function render(){const q=search.value.toLowerCase(), b=brandSelect.value, c=catSelect.value; filtered=products.filter(p=>p.available!==false).filter(p=>(!b||p.brand===b)&&(!c||p.category===c)&&(!q||`${p.name} ${p.brand} ${p.category} ${p.description}`.toLowerCase().includes(q)));countText.textContent=`${filtered.length} productos disponibles`;grid.innerHTML=filtered.map(card).join(''); if(filtered[0]) document.getElementById('heroImg').src=filtered[0].image;}
+function card(p){return `<article class="card"><div class="pic"><img src="${p.image}" alt="${esc(p.name)}"></div><div class="card-body"><div class="brand">${esc(p.brand)} · ${esc(p.category)}</div><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><div class="price"><strong>${esc(p.price)}</strong><span>XMAYOR</span></div></div></article>`}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-function safeAttr(s){return String(s).replace(/'/g,"\\'")}
-search.addEventListener('input',render); load();
+[search,brandSelect,catSelect].forEach(el=>el.addEventListener('input',render));clearBtn.onclick=()=>{search.value='';brandSelect.value='';catSelect.value='';render()};init();
