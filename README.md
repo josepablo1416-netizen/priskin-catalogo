@@ -1,3 +1,3 @@
-# PriSkin V8 HD Images
+# PriSkin V8 HD Updated
 
-Imágenes oficiales HD normalizadas para catálogo premium.
+Actualiza imágenes de VT Reedle Shot 100 y Mixsoon Vitamin C Cream.
