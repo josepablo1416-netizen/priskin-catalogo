@@ -1,12 +1,29 @@
 
 let products=[], cart=JSON.parse(localStorage.getItem('priskinCart')||'[]');
 const grid=document.getElementById('productGrid'),search=document.getElementById('search'),brandSelect=document.getElementById('brandSelect'),catSelect=document.getElementById('catSelect'),countText=document.getElementById('countText'),brandButtons=document.getElementById('brandButtons'),mobileChips=document.getElementById('mobileChips');
-async function init(){const saved=localStorage.getItem('priskinProductsV6');products=saved?JSON.parse(saved):await(await fetch('products.json')).json();setup();render();renderCart()}
+async function init(){const saved=localStorage.getItem('priskinProductsV6');products=saved?JSON.parse(saved):await(await fetch('products.json')).json();setup();render();renderCart();startHeroSlider()}
 function setup(){const brands=[...new Set(products.map(p=>p.brand))].sort();mobileChips.innerHTML=`<button class="chip active" onclick="chooseBrandMobile('')">Todos</button>`;brands.forEach(b=>{brandSelect.innerHTML+=`<option>${esc(b)}</option>`;brandButtons.innerHTML+=`<button class="brand-pill" onclick="chooseBrand('${safeAttr(b)}')">${esc(b)}</button>`;mobileChips.innerHTML+=`<button class="chip" onclick="chooseBrandMobile('${safeAttr(b)}')">${esc(b)}</button>`});[...new Set(products.map(p=>p.category))].sort().forEach(c=>catSelect.innerHTML+=`<option>${esc(c)}</option>`)}
 function chooseBrand(b){brandSelect.value=b;document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});render();updateChips()}
 function chooseBrandMobile(b){brandSelect.value=b;render();updateChips()}
 function updateChips(){document.querySelectorAll('.chip').forEach(ch=>ch.classList.toggle('active', ch.textContent===brandSelect.value || (!brandSelect.value && ch.textContent==='Todos')))}
 function render(){const q=search.value.toLowerCase(),b=brandSelect.value,c=catSelect.value;const list=products.filter(p=>p.available!==false).filter(p=>(!b||p.brand===b)&&(!c||p.category===c)&&(!q||`${p.name} ${p.brand} ${p.category} ${p.description}`.toLowerCase().includes(q)));countText.textContent=`${list.length} productos disponibles`;grid.innerHTML=list.map(card).join('');if(list[0])heroImg.src=list[0].image}
+
+let heroIndex = 0;
+function startHeroSlider(){
+  if(!products.length) return;
+  setInterval(()=>{
+    const active = products.filter(p=>p.available!==false);
+    if(!active.length || !document.getElementById('heroImg')) return;
+    heroIndex = (heroIndex + 1) % active.length;
+    heroImg.classList.add('fade-out');
+    setTimeout(()=>{
+      heroImg.src = active[heroIndex].image;
+      heroImg.alt = active[heroIndex].name;
+      heroImg.classList.remove('fade-out');
+    }, 220);
+  }, 2600);
+}
+
 function card(p){return `<article class="card">${p.badge?`<div class="badge">${esc(p.badge)}</div>`:''}<button class="quick" onclick="quickView(${p.id})">👁</button><div class="pic"><img loading="lazy" src="${p.image}" alt="${esc(p.name)}"></div><div class="body"><div class="brand">${esc(p.brand)} · ${esc(p.category)}</div><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><div class="price-line"><strong class="price">${esc(p.price)}</strong><span class="pill">XMAYOR</span></div><button class="add-cart" onclick="addToCart(${p.id})">Agregar al carrito</button></div></article>`}
 function quickView(id){const p=products.find(x=>x.id===id);modalContent.innerHTML=`<div class="modal-grid"><img loading="lazy" src="${p.image}" alt="${esc(p.name)}"><div><div class="brand">${esc(p.brand)} · ${esc(p.category)}</div><h2>${esc(p.name)}</h2><p>${esc(p.description)}</p><div class="price-line"><strong class="price">${esc(p.price)}</strong><span class="pill">XMAYOR</span></div><button class="add-cart" onclick="addToCart(${p.id});closeModal()">Agregar al carrito</button></div></div>`;quickModal.classList.add('open')}
 function closeModal(){quickModal.classList.remove('open')}

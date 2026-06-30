@@ -1,6 +1,4 @@
-# PriSkin V8.1 Premium Clean Images
+# PriSkin V8.2 Hero Slider
 
-- Actualiza VT Reedle Shot 100 eliminando fondo negro.
-- Actualiza Mixsoon Vitamin C Cream.
-- Elimina sombras/fondos grises detrás de productos.
-- Mantiene carrito, responsive mobile/tablet y checkout por WhatsApp.
+- El producto del hero cambia automáticamente mostrando todos los productos.
+- Mantiene imágenes HD, carrito y diseño responsive.

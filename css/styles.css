@@ -280,3 +280,31 @@ footer{width:min(1220px,100%);margin:40px auto 0;padding:28px;color:#8a7580;bord
     background:#fff !important;
   }
 }
+
+
+/* V8.2 HERO PRODUCT SLIDER */
+#heroImg{
+  transition: opacity .22s ease, transform .35s ease;
+}
+#heroImg.fade-out{
+  opacity:0;
+  transform:scale(.96);
+}
+.hero-product,
+.hero-showcase{
+  position:relative;
+}
+.hero-product::after,
+.hero-showcase::after{
+  content:"Productos disponibles";
+  position:absolute;
+  bottom:18px;
+  right:22px;
+  font-size:12px;
+  font-weight:900;
+  color:#d94f81;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:8px 12px;
+}
