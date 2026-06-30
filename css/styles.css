@@ -233,3 +233,11 @@ footer{width:min(1220px,100%);margin:40px auto 0;padding:28px;color:#8a7580;bord
 @media(min-width:851px){
   .mobile-menu{display:none!important}
 }
+
+/* V8 HD product image refinement */
+.pic{background:#fff!important;padding:10px!important}
+.pic img{object-fit:contain!important;filter:none!important;border-radius:20px;transition:transform .25s ease}
+.card:hover .pic img{transform:scale(1.035)}
+.hero-showcase img,.hero-product img{object-fit:contain!important;filter:none!important}
+.cart-item img,.modal-grid img,.row img{object-fit:contain!important;background:#fff!important}
+@media(max-width:850px){.pic{height:360px!important;padding:12px!important}}

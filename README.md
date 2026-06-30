@@ -1,3 +1,3 @@
-# PriSkin V7 Premium
+# PriSkin V8 HD Images
 
-Mobile-first: barra inferior, chips de marcas, carrito móvil tipo bottom sheet, tarjetas grandes y experiencia tablet/celular optimizada.
+Imágenes oficiales HD normalizadas para catálogo premium.
