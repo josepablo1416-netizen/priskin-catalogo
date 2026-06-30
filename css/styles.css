@@ -16,8 +16,7 @@ main{width:min(1220px,100%);margin:auto;padding:28px}
 .buttons{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
 .benefits div{background:white;border:1px solid var(--line);border-radius:18px;padding:16px}.benefits b{display:block;color:#d94f81}.benefits span{color:#6b5c67;font-size:13px}
 .hero-product{min-height:380px;border-radius:32px;background:radial-gradient(circle,#ffdce9,#fff 64%);display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-product img{width:78%;height:330px;object-fit:contain;filter:drop-shadow(0 24px 25px rgba(120,60,80,.20))}
-.brands-section,.searchbox{margin:28px 0;padding:22px;border:1px solid var(--line);background:white;border-radius:26px;box-shadow:var(--shadow);scroll-margin-top:105px}
+.hero-product img{width:78%;height:330px;object-fit:contain;padding:22px;border:1px solid var(--line);background:white;border-radius:26px;box-shadow:var(--shadow);scroll-margin-top:105px}
 .brands-section h2{font-size:32px;margin:8px 0 18px;color:#d94f81}.brand-buttons{display:flex;gap:10px;flex-wrap:wrap}
 .brand-pill{background:#fff;border:1px solid var(--line);color:#9a4c68;box-shadow:none}.brand-pill:hover{background:#fff0f6}
 .searchbox{display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:14px}input,select,textarea,label{width:100%;padding:15px 17px;border:1px solid var(--line);border-radius:16px;background:white;font:inherit}
@@ -28,8 +27,7 @@ main{width:min(1220px,100%);margin:auto;padding:28px}
 .badge{position:absolute;top:16px;left:16px;z-index:2;background:#e85b8a;color:white;font-size:11px;font-weight:900;border-radius:9px;padding:8px 10px}
 .quick{position:absolute;top:16px;right:16px;z-index:2;background:white;color:#d94f81;border:1px solid var(--line);box-shadow:none;padding:8px 11px}
 .pic{height:285px;background:linear-gradient(135deg,#fff,#fff1f6 60%,#edf9fb);display:flex;align-items:center;justify-content:center;padding:28px}
-.pic img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;filter:drop-shadow(0 16px 14px rgba(100,60,75,.12))}
-.body{padding:18px;display:flex;flex-direction:column;flex:1}.brand{color:#bd5a80;font-size:13px;font-weight:900}.body h3{font-size:18px;line-height:1.18;margin:8px 0}.body p{color:#5e5660;line-height:1.4;font-size:14px;min-height:58px}
+.pic img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;display:flex;flex-direction:column;flex:1}.brand{color:#bd5a80;font-size:13px;font-weight:900}.body h3{font-size:18px;line-height:1.18;margin:8px 0}.body p{color:#5e5660;line-height:1.4;font-size:14px;min-height:58px}
 .price{font-size:22px;font-weight:900;color:#d94f81}.pill{font-size:11px;color:#c15f83;font-weight:900;background:#ffe8f0;border:1px solid #f4bfd0;border-radius:999px;padding:7px 10px}.price-line{display:flex;align-items:center;gap:10px;margin-top:auto}
 .add-cart{display:block;text-align:center;margin-top:14px;border-radius:14px;background:#ffe8f0;color:#d94f81;border:1px solid #f4bfd0;padding:12px;font-weight:900;box-shadow:none}
 .overlay{position:fixed;inset:0;background:rgba(30,20,28,.38);z-index:30;display:none}.overlay.open{display:block}
@@ -241,3 +239,44 @@ footer{width:min(1220px,100%);margin:40px auto 0;padding:28px;color:#8a7580;bord
 .hero-showcase img,.hero-product img{object-fit:contain!important;filter:none!important}
 .cart-item img,.modal-grid img,.row img{object-fit:contain!important;background:#fff!important}
 @media(max-width:850px){.pic{height:360px!important;padding:12px!important}}
+
+
+/* V8.1 CLEAN PRODUCT IMAGES */
+.pic{
+  background:#fff !important;
+  box-shadow:none !important;
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.pic img{
+  object-fit:contain !important;
+  object-position:center center !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  background:transparent !important;
+  transform:none;
+}
+.card:hover .pic img{
+  transform:scale(1.035);
+}
+.hero-product,
+.hero-showcase{
+  background:radial-gradient(circle,#fff4f8 0%,#ffffff 68%) !important;
+}
+.hero-product img,
+.hero-showcase img,
+.modal-grid img,
+.cart-item img,
+.row img{
+  object-fit:contain !important;
+  filter:none !important;
+  background:#fff !important;
+}
+.modal-grid img{
+  border:1px solid var(--line);
+}
+@media(max-width:850px){
+  .pic{
+    background:#fff !important;
+  }
+}
